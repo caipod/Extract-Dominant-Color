@@ -24,6 +24,19 @@ h1{
     position: absolute;
 }
 
+#uploaded-image{
+    max-height: 24vw;
+    height: auto;
+}
+
+#image-container{
+    display: none;
+}
+
 input{
     margin-bottom: 30px;
+}
+
+canvas{
+    display: none;
 }

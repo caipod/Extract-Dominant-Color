@@ -21,6 +21,14 @@ document.getElementById('upload').addEventListener('change', function(event) {
             ctx.drawImage(img, 0, 0);
         }
 
+        // 显示图片容器
+        const imageContainer = document.getElementById('image-container');
+        imageContainer.style.display = 'block';
+
+        // 显示上传的图片
+        const uploadedImage = document.getElementById('uploaded-image');
+        uploadedImage.src = img.src;
+
         const dominantColor = extractDominantColor(ctx, canvas);
         const rgbColor = `rgb(${dominantColor})`;
         const [r, g, b] = dominantColor.split(',').map(Number);
