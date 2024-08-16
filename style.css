@@ -1,5 +1,5 @@
 body{
-    font-family: MiSansVF_Demibold,system-ui;
+    font-family: MiSansVF,system-ui;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -12,20 +12,12 @@ h1{
 
 #result 
 {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     color: #fff;
     font-size: 36px;
-    text-align: center;
-    z-index: -100;
-    position: absolute;
 }
 
 #uploaded-image{
-    max-height: 24vw;
+    max-height: 30vw;
     height: auto;
 }
 
@@ -39,4 +31,10 @@ input{
 
 canvas{
     display: none;
+}
+
+.imgbox{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
 }

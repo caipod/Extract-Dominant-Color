@@ -136,6 +136,6 @@ function hslToRgb(h, s, l) {
 
 function updateResultDiv(rgbColor, hexColor) {
     const resultDiv = document.getElementById('result');
-    resultDiv.style.backgroundColor = rgbColor;
+    document.body.style.backgroundColor = rgbColor;
     resultDiv.textContent = `${rgbColor}\n${hexColor}`;
 }

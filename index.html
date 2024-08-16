@@ -8,11 +8,13 @@
 </head>
 <body>
     <h1>Extract Dominant Color</h1>
-    <input type="file" id="upload" accept="image/*">
+    <input type="file" id="upload" accept="image/*" placeholder="">
     <canvas id="canvas"></canvas>
-    <div id="result"></div>
-    <div id="image-container">
-        <img id="uploaded-image" alt="Uploaded image">
+    <div class="imgbox">
+        <div id="result"></div>
+        <div id="image-container">
+            <img id="uploaded-image" alt="Uploaded image">
+        </div>       
     </div>
     <script src="color.js"></script>
 </body>
